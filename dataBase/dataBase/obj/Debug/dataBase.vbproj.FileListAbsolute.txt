@@ -1,0 +1,10 @@
+C:\Users\Aitor\source\repos\dataBase\dataBase\bin\Debug\dataBase.dll
+C:\Users\Aitor\source\repos\dataBase\dataBase\bin\Debug\dataBase.pdb
+C:\Users\Aitor\source\repos\dataBase\dataBase\bin\Debug\dataBase.xml
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.vbprojAssemblyReference.cache
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.Resources.resources
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.vbproj.GenerateResource.cache
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.vbproj.CoreCompileInputs.cache
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.dll
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.xml
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.pdb
