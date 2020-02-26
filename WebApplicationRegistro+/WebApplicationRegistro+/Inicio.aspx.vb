@@ -45,4 +45,12 @@ Public Class WebFormRegistro
         End If
 
     End Sub
+
+    Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
+        Response.Redirect("~/Registro.aspx")
+    End Sub
+
+    Protected Sub LinkButton2_Click(sender As Object, e As EventArgs) Handles LinkButton2.Click
+        Response.Redirect("~/SolicitudCambiarPassword.aspx")
+    End Sub
 End Class

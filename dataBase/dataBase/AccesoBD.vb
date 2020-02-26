@@ -10,7 +10,7 @@ Public Class AccesoBD
 
     Public Shared Function Conectar() As String
         Try
-            conexion.ConnectionString = “Server=tcp:hadsg15.database.windows.net,1433;Initial Catalog=HADSG15A;Persist Security Info=False;User ID=aitor.ortega.98@gmail.com@hadsg15;Password=Aritzaritz98;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+            conexion.ConnectionString = "Server=tcp:hads.database.windows.net,1433;Initial Catalog=Amigos;Persist Security Info=False;User ID=vadillo@ehu.es@hads;Password=curso19-20;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
             conexion.Open()
         Catch ex As Exception
             Return "ERROR DE CONEXIÓN: " + ex.Message
@@ -64,7 +64,7 @@ Public Class AccesoBD
         comando = New SqlCommand(st, conexion)
         Dim result As Object = comando.ExecuteScalar()
 
-        'Try
+        '
         'data = comando.ExecuteReader()
         'Catch ex As Exception
         'End Try

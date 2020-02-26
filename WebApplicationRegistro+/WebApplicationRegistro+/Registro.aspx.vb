@@ -42,7 +42,7 @@ Public Class Registro
         Randomize()
         randomNumber = CLng(9000000 * Rnd()) + 1000000
 
-        Dim link = "http://hads20g15a.azurewebsites.net/ConfirmarCorreo.aspx?email=" & email
+        Dim link = "http://localhost:2942/ConfirmarCorreo.aspx?email=" & email
         If send.EnviarEmail(email, link) Then
 
             bd.Conectar()
