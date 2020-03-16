@@ -2,25 +2,19 @@
 
 Public Class WebFormRegistro
     Inherits System.Web.UI.Page
-
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
+
+
         Dim bd As New dataBase.AccesoBD
-        Dim email As String = TextBox1.Text + " "
-        Dim pass As String = TextBox2.Text + " "
+        Dim email As String = TextBox1.Text
+        Dim pass As String = TextBox2.Text
 
         Dim result As SqlDataReader
 
         Dim mail As String
         Dim password As String
         Dim estado As String
+        Dim tipo As String
 
         bd.Conectar()
         result = bd.Login(email)
@@ -29,6 +23,7 @@ Public Class WebFormRegistro
             mail = result.Item("email")
             password = result.Item("pass")
             estado = result.Item("confirmado").ToString()
+            tipo = result.Item("tipo")
         End While
         bd.CerrarConexion()
 
@@ -38,10 +33,15 @@ Public Class WebFormRegistro
         ElseIf email <> mail Or pass <> password Then
             Label4.Visible = True
             Label4.Text = "Email o Contraseña incorrecto"
-        Else
+        ElseIf tipo = "Alumno" Then
+            Session("email") = mail
             Label4.Visible = False
-            Response.Redirect("~/Home.aspx")
+            Response.Redirect("~/Alumno.aspx")
 
+        ElseIf tipo = "Profesor" Then
+            Session("email") = mail
+            Label4.Visible = False
+            Response.Redirect("~/Profesor.aspx")
         End If
 
     End Sub

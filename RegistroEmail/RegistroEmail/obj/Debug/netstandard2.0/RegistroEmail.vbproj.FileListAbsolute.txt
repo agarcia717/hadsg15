@@ -16,3 +16,12 @@ C:\Users\Acer\Desktop\hads\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\
 C:\Users\Acer\Desktop\hads\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.AssemblyInfo.vb
 C:\Users\Acer\Desktop\hads\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.dll
 C:\Users\Acer\Desktop\hads\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.pdb
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\bin\Debug\netstandard2.0\RegistroEmail.deps.json
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\bin\Debug\netstandard2.0\RegistroEmail.dll
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\bin\Debug\netstandard2.0\RegistroEmail.pdb
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.vbprojAssemblyReference.cache
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.vbproj.CoreCompileInputs.cache
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.AssemblyInfoInputs.cache
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.AssemblyInfo.vb
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.dll
+C:\Users\Aitor\source\repos\RegistroEmail\RegistroEmail\obj\Debug\netstandard2.0\RegistroEmail.pdb

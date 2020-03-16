@@ -185,9 +185,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aitor\\source\\repos\\RegistroEmail\\RegistroEmail\\RegistroEmail_real_r.vbproj",
-      "projectName": "RegistroEmail_real_r",
-      "projectPath": "C:\\Users\\Aitor\\source\\repos\\RegistroEmail\\RegistroEmail\\RegistroEmail_real_r.vbproj",
+      "projectUniqueName": "C:\\Users\\Aitor\\source\\repos\\RegistroEmail\\RegistroEmail\\RegistroEmail.vbproj",
+      "projectName": "RegistroEmail",
+      "projectPath": "C:\\Users\\Aitor\\source\\repos\\RegistroEmail\\RegistroEmail\\RegistroEmail.vbproj",
       "packagesPath": "C:\\Users\\Aitor\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Aitor\\source\\repos\\RegistroEmail\\RegistroEmail\\obj\\",
       "projectStyle": "PackageReference",
