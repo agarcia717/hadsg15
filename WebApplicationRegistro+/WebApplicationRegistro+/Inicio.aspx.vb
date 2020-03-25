@@ -53,4 +53,8 @@ Public Class WebFormRegistro
     Protected Sub LinkButton2_Click(sender As Object, e As EventArgs) Handles LinkButton2.Click
         Response.Redirect("~/SolicitudCambiarPassword.aspx")
     End Sub
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+    End Sub
 End Class

@@ -1,5 +1,6 @@
 ﻿
 Imports System.Data.SqlClient
+
 Public Class AccesoBD
 
 
@@ -109,6 +110,18 @@ Public Class AccesoBD
 
         Return tblMbrs
     End Function
+    Public Shared Function DataSetT(ByVal asignatura As String) As DataSet
+        Dim dstMbrs As New DataSet
+        Dim tblMbrs As New DataTable
+        Dim dapMbrs As New SqlDataAdapter("SELECT * FROM TareasGenericas WHERE CodAsig='" + asignatura + "'", conexion)
+
+        Dim bldMbrs As New SqlCommandBuilder(dapMbrs)
+        dapMbrs.Fill(dstMbrs, "TareasGenericas")
+        tblMbrs = dstMbrs.Tables("TareasGenericas")
+
+
+        Return dstMbrs
+    End Function
 
     Public Shared Function DataTEstudiantesTarea(ByVal email As String) As DataTable
         Dim dstMbrs As New DataSet
@@ -167,4 +180,37 @@ Public Class AccesoBD
         End Try
         Return "Tarea '" & codigo & "' insertada correctamente."
     End Function
+
+
+    Public Shared Function ImportarTareasXML(ByVal tareas As Xml.XmlNodeList, ByVal codasig As String) As String
+        Dim dt As New DataSet
+        Try
+            Dim dap As New SqlDataAdapter("SELECT * From TareasGenericas", conexion)
+            Dim bld As New SqlCommandBuilder(dap)
+            dap.Fill(dt, "TareasGenericas")
+            Dim tab As DataTable = dt.Tables("TareasGenericas")
+
+            For i = 0 To tareas.Count - 1
+                Dim dr As DataRow = tab.NewRow
+                dr("Codigo") = tareas(i).Attributes(0).InnerText
+                dr("Descripcion") = tareas(i).ChildNodes(0).InnerText
+                dr("CodAsig") = codasig
+                dr("HEstimadas") = tareas(i).ChildNodes(1).InnerText
+                dr("Explotacion") = tareas(i).ChildNodes(2).InnerText
+                dr("TipoTarea") = tareas(i).ChildNodes(3).InnerText
+                tab.Rows.Add(dr)
+            Next
+
+            dap.Update(dt, "TareasGenericas")
+            dt.AcceptChanges()
+        Catch ex As Exception
+            Return ex.Message
+        End Try
+
+        Return "OK"
+    End Function
+
+
+
+
 End Class

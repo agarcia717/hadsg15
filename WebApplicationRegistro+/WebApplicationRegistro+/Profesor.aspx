@@ -28,6 +28,15 @@
             <asp:Button ID="own" runat="server" Font-Names="Verdana" Text="Asignaturas" />
             <br />
             <br />
+            <asp:Button ID="own0" runat="server" Font-Names="Verdana" Text="Importar Documento XML" Width="196px" />
+            <br />
+            <br />
+            <asp:Button ID="own1" runat="server" Font-Names="Verdana" Text="Exportar" Width="112px" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <asp:Button ID="generic" runat="server" Font-Names="Verdana" Text="Tareas" />
             <br />
             <br />

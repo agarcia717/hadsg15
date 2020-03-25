@@ -1,0 +1,50 @@
+<tareas>
+  <tarea codigo="SEG08-Test12">
+    <descripcion>Test 12 de la asignatura</descripcion>
+    <hestimadas>3</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Examen</tipotarea>
+  </tarea>
+  <tarea codigo="SEG08-Trabajo20">
+    <descripcion>Tareas del trabajo 20 de la asignatura</descripcion>
+    <hestimadas>10</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Trabajo</tipotarea>
+  </tarea>
+  <tarea codigo="SEG20G15-Lab1">
+    <descripcion>Tareas del trabajo 1 de la asignatura</descripcion>
+    <hestimadas>10</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Trabajo</tipotarea>
+  </tarea>
+  <tarea codigo="SEG20G15-Test1">
+    <descripcion>Test 1 de la asignatura</descripcion>
+    <hestimadas>3</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Examen</tipotarea>
+  </tarea>
+  <tarea codigo="SEG20G17-Lab1">
+    <descripcion>Tareas del trabajo 1 de la asignatura</descripcion>
+    <hestimadas>10</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Trabajo</tipotarea>
+  </tarea>
+  <tarea codigo="SEG20G17-Test1">
+    <descripcion>Test 1 de la asignatura</descripcion>
+    <hestimadas>3</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Examen</tipotarea>
+  </tarea>
+  <tarea codigo="SEG20G19-Lab1">
+    <descripcion>Tareas del trabajo 1 de la asignatura</descripcion>
+    <hestimadas>10</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Trabajo</tipotarea>
+  </tarea>
+  <tarea codigo="SEG20G19-Test1">
+    <descripcion>Test 1 de la asignatura</descripcion>
+    <hestimadas>3</hestimadas>
+    <explotacion>False</explotacion>
+    <tipotarea>Examen</tipotarea>
+  </tarea>
+</tareas>

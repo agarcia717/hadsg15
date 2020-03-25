@@ -17,4 +17,12 @@
     Protected Sub group0_Click(sender As Object, e As EventArgs) Handles group0.Click
         Response.Redirect("~/Estadisticas.aspx")
     End Sub
+
+    Protected Sub own0_Click(sender As Object, e As EventArgs) Handles own0.Click
+        Response.Redirect("~/ImportarDocumentoXML.aspx")
+    End Sub
+
+    Protected Sub own1_Click(sender As Object, e As EventArgs) Handles own1.Click
+        Response.Redirect("~/ExportarDocumentoXML.aspx")
+    End Sub
 End Class
