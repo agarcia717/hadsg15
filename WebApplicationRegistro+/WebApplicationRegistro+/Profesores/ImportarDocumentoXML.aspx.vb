@@ -11,19 +11,19 @@ Public Class ImportarDocumentoXML
     End Sub
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-        Xml1.DocumentSource = Server.MapPath("App_Data/" & DropDownList1.SelectedValue & ".xml")
-        Xml1.TransformSource = Server.MapPath("App_Data/XSLTFile.xsl")
+        Xml1.DocumentSource = Server.MapPath("~/App_Data/" & DropDownList1.SelectedValue & ".xml")
+        Xml1.TransformSource = Server.MapPath("~/App_Data/XSLTFile.xsl")
     End Sub
 
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
-        Response.Redirect("~/Profesor.aspx")
+        Response.Redirect("Profesor.aspx")
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         bd.Conectar()
 
         Dim doc As New XmlDocument
-        doc.Load(Server.MapPath("App_Data/" & DropDownList1.SelectedValue & ".xml"))
+        doc.Load(Server.MapPath("~/App_Data/" & DropDownList1.SelectedValue & ".xml"))
         Dim tareas As XmlNodeList
         tareas = doc.GetElementsByTagName("tarea")
 
@@ -35,4 +35,5 @@ Public Class ImportarDocumentoXML
         End If
         bd.CerrarConexion()
     End Sub
+
 End Class

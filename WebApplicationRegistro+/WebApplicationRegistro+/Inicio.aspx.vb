@@ -8,16 +8,18 @@ Public Class WebFormRegistro
         Dim bd As New dataBase.AccesoBD
         Dim email As String = TextBox1.Text
         Dim pass As String = TextBox2.Text
-
+        Dim has As New Crypto.Security
+        pass = has.Crypt(pass)
         Dim result As SqlDataReader
 
         Dim mail As String
         Dim password As String
         Dim estado As String
         Dim tipo As String
-
         bd.Conectar()
         result = bd.Login(email)
+
+
         While result.Read
 
             mail = result.Item("email")
@@ -36,12 +38,15 @@ Public Class WebFormRegistro
         ElseIf tipo = "Alumno" Then
             Session("email") = mail
             Label4.Visible = False
-            Response.Redirect("~/Alumno.aspx")
+            System.Web.Security.FormsAuthentication.SetAuthCookie(Session("email"), False)
+            Response.Redirect("~/Alumnos/Alumno.aspx")
 
         ElseIf tipo = "Profesor" Then
             Session("email") = mail
             Label4.Visible = False
-            Response.Redirect("~/Profesor.aspx")
+            System.Web.Security.FormsAuthentication.SetAuthCookie(Session("email"), False)
+            Response.Redirect("~/Profesores/Profesor.aspx")
+
         End If
 
     End Sub
@@ -57,4 +62,6 @@ Public Class WebFormRegistro
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
     End Sub
+
+
 End Class

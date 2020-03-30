@@ -73,7 +73,7 @@ Public Class ExportarDocumentoXML
     End Sub
 
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
-        Response.Redirect("~/Profesor.aspx")
+        Response.Redirect("Profesor.aspx")
     End Sub
 
 

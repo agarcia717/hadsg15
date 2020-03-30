@@ -62,7 +62,7 @@ Public Class TareasAlumno
     End Sub
 
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
-        Response.Redirect("~/Alumno.aspx")
+        Response.Redirect("Alumno.aspx")
     End Sub
 End Class
 

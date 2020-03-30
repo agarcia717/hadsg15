@@ -3,13 +3,14 @@
 Public Class Registro
     Inherits System.Web.UI.Page
     Dim bd As New dataBase.AccesoBD
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim send As New RegistroEmail.Class1
+
 
         Dim email As String
         Dim nombre As String
@@ -41,11 +42,12 @@ Public Class Registro
         Dim randomNumber As Integer
         Randomize()
         randomNumber = CLng(9000000 * Rnd()) + 1000000
-
+        Dim send As New RegistroEmail.Class1
         Dim link = "http://localhost:2942/ConfirmarCorreo.aspx?email=" & email
         If send.EnviarEmail(email, link) Then
-
+            Dim sec As New Crypto.Security
             bd.Conectar()
+            password = sec.Crypt(password)
             bd.Insertar(email, nombre, apellidos, randomNumber, 0, rol, password, 0)
             bd.CerrarConexion()
 
@@ -59,4 +61,9 @@ Public Class Registro
 
         End If
     End Sub
+
+
+
+
+
 End Class

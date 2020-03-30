@@ -633,3 +633,6 @@ C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\obj\Debug\WebApplicationRegistro+.vbproj.CopyComplete
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\obj\Debug\WebApplicationRegistro+.vbprojAssemblyReference.cache
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\dataBase.xml
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\Crypto.dll
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\Crypto.pdb
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\Crypto.xml

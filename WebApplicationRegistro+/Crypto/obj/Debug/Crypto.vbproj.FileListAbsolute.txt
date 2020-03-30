@@ -1,0 +1,9 @@
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\bin\Debug\Crypto.dll
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\bin\Debug\Crypto.pdb
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\bin\Debug\Crypto.xml
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.Resources.resources
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.vbproj.GenerateResource.cache
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.vbproj.CoreCompileInputs.cache
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.dll
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.xml
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.pdb

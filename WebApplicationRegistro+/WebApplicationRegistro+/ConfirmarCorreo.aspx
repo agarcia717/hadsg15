@@ -19,7 +19,6 @@
         <br />
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server" Text="i"></asp:Label>
 
         <br />
         <br />

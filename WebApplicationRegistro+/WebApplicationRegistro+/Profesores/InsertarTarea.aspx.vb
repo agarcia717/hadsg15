@@ -10,6 +10,6 @@
         MsgBox(msg)
     End Sub
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
-        Response.Redirect("~/TareasProfesor.aspx")
+        Response.Redirect("TareasProfesor.aspx")
     End Sub
 End Class

@@ -6,10 +6,11 @@
     End Sub
 
     Protected Sub generic_Click(sender As Object, e As EventArgs) Handles generic.Click
-        Response.Redirect("~/TareasAlumno.aspx")
+        Response.Redirect("TareasAlumno.aspx")
     End Sub
 
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
+        System.Web.Security.FormsAuthentication.SignOut()
         Session.Abandon()
         Response.Redirect("~/Inicio.aspx")
     End Sub

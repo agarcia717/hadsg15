@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "dataBase", "..\dataBase\dat
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "RegistroEmail", "..\RegistroEmail\RegistroEmail\RegistroEmail.vbproj", "{0268B75C-31A4-4BB5-A610-CEE9566117B0}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Crypto", "Crypto\Crypto.vbproj", "{79C87ADB-B43C-4DFD-BFAC-BB8E43EEB051}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0268B75C-31A4-4BB5-A610-CEE9566117B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0268B75C-31A4-4BB5-A610-CEE9566117B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0268B75C-31A4-4BB5-A610-CEE9566117B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C87ADB-B43C-4DFD-BFAC-BB8E43EEB051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C87ADB-B43C-4DFD-BFAC-BB8E43EEB051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C87ADB-B43C-4DFD-BFAC-BB8E43EEB051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C87ADB-B43C-4DFD-BFAC-BB8E43EEB051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

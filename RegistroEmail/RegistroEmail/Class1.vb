@@ -76,9 +76,6 @@ Public Class Class1
             Return False
         End Try
         Return True
-
-
-
     End Function
 
 

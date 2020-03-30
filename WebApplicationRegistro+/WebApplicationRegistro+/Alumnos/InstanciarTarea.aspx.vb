@@ -49,6 +49,6 @@ Public Class InstanciarTarea
     End Sub
 
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
-        Response.Redirect("~/TareasAlumno.aspx")
+        Response.Redirect("TareasAlumno.aspx")
     End Sub
 End Class

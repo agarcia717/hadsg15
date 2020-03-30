@@ -37,6 +37,33 @@ WebApplicationRegistro+
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:WebApplicationRegistro_.ConfirmarCorreo._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.ConfirmarCorreo._hola">
+<summary>
+Control hola.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.ConfirmarCorreo._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:WebApplicationRegistro_.CambiarPassword1._form1">
 <summary>
 Control form1.
@@ -154,42 +181,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:WebApplicationRegistro_.ConfirmarCorreo._form1">
-<summary>
-Control form1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:WebApplicationRegistro_.ConfirmarCorreo._hola">
-<summary>
-Control hola.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:WebApplicationRegistro_.ConfirmarCorreo._Label1">
-<summary>
-Control Label1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:WebApplicationRegistro_.ConfirmarCorreo._Button1">
-<summary>
-Control Button1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:WebApplicationRegistro_.Sesion._form1">
 <summary>
 Control form1.
@@ -256,15 +247,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:WebApplicationRegistro_.Sesion._group">
 <summary>
 Control group.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:WebApplicationRegistro_.Sesion._Button1">
-<summary>
-Control Button1.
 </summary>
 <remarks>
 Campo generado automáticamente.
