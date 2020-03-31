@@ -38,16 +38,20 @@ Public Class WebFormRegistro
         ElseIf tipo = "Alumno" Then
             Session("email") = mail
             Label4.Visible = False
-            System.Web.Security.FormsAuthentication.SetAuthCookie(Session("email"), False)
+            System.Web.Security.FormsAuthentication.SetAuthCookie("alumno", False)
             Response.Redirect("~/Alumnos/Alumno.aspx")
 
         ElseIf tipo = "Profesor" Then
             Session("email") = mail
             Label4.Visible = False
-            System.Web.Security.FormsAuthentication.SetAuthCookie(Session("email"), False)
+            If Session("email") = "vadillo@ehu.es" Then
+                System.Web.Security.FormsAuthentication.SetAuthCookie(Session("email"), False)
+            Else
+                System.Web.Security.FormsAuthentication.SetAuthCookie("profesor", False)
+            End If
             Response.Redirect("~/Profesores/Profesor.aspx")
 
-        End If
+            End If
 
     End Sub
 
