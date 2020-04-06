@@ -636,3 +636,4 @@ C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\Crypto.dll
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\Crypto.pdb
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\Crypto.xml
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\WebApplicationRegistro+\bin\AjaxControlToolkit.dll

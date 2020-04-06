@@ -4,7 +4,6 @@ Public Class WebFormRegistro
     Inherits System.Web.UI.Page
     Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
 
-
         Dim bd As New dataBase.AccesoBD
         Dim email As String = TextBox1.Text
         Dim pass As String = TextBox2.Text
@@ -39,6 +38,9 @@ Public Class WebFormRegistro
             Session("email") = mail
             Label4.Visible = False
             System.Web.Security.FormsAuthentication.SetAuthCookie("alumno", False)
+            Global.WebApplicationRegistro_.Global_asax.Update_CountA(1)
+            Global.WebApplicationRegistro_.Global_asax.Update_AddList(Session("email"), Global.WebApplicationRegistro_.Global_asax.Get_listA)
+
             Response.Redirect("~/Alumnos/Alumno.aspx")
 
         ElseIf tipo = "Profesor" Then
@@ -49,9 +51,11 @@ Public Class WebFormRegistro
             Else
                 System.Web.Security.FormsAuthentication.SetAuthCookie("profesor", False)
             End If
-            Response.Redirect("~/Profesores/Profesor.aspx")
+            Global.WebApplicationRegistro_.Global_asax.Update_CountP(1)
+            Global.WebApplicationRegistro_.Global_asax.Update_AddList(Session("email"), Global.WebApplicationRegistro_.Global_asax.Get_listP)
 
-            End If
+            Response.Redirect("~/Profesores/Profesor.aspx")
+        End If
 
     End Sub
 

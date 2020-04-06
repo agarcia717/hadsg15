@@ -46,6 +46,10 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Crypto">
       <HintPath>..\Crypto\bin\Debug\Crypto.dll</HintPath>
     </Reference>
@@ -108,6 +112,7 @@
     <Content Include="App_Data\XSLTFile.xsl" />
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Alumnos\Alumno.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Profesores\Estadisticas.aspx" />
     <Content Include="Profesores\ExportarDocumentoXML.aspx" />
     <Content Include="Profesores\ImportarDocumentoXML.aspx" />
@@ -144,6 +149,9 @@
     <Compile Include="Alumnos\Alumno.aspx.vb">
       <DependentUpon>Alumno.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Profesores\Estadisticas.aspx.designer.vb">
       <DependentUpon>Estadisticas.aspx</DependentUpon>
