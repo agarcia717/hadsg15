@@ -14,5 +14,7 @@
         Response.Redirect(“InsertarTarea.aspx")
     End Sub
 
-
+    Protected Sub asignaturas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles asignaturas.SelectedIndexChanged
+        System.Threading.Thread.Sleep(1000)
+    End Sub
 End Class

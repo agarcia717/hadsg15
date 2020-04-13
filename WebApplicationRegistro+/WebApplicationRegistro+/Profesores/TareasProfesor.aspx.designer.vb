@@ -50,6 +50,15 @@ Partial Public Class TareasProfesor
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''Control UpdateProgress1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents UpdateProgress1 As Global.System.Web.UI.UpdateProgress
+    
+    '''<summary>
     '''Control UpdatePanel1.
     '''</summary>
     '''<remarks>

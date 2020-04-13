@@ -4,12 +4,14 @@
 Public Class InstanciarTarea
     Inherits System.Web.UI.Page
     Dim bd As New dataBase.AccesoBD
+
     Dim dttabla As New DataTable
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+
         Label1.Text = Session("email")
         Label2.Text = Request.QueryString("codigo")
         Label3.Text = Request.QueryString("horasestimadas")
-
 
 
         bd.Conectar()
@@ -18,6 +20,7 @@ Public Class InstanciarTarea
         dttabla = Session("datosA")
         GridView1.DataSource = dttabla
         GridView1.DataBind()
+
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -51,4 +54,5 @@ Public Class InstanciarTarea
     Protected Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
         Response.Redirect("TareasAlumno.aspx")
     End Sub
+
 End Class

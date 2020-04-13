@@ -235,18 +235,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:WebApplicationRegistro_.Sesion._Timer1">
+<member name="F:WebApplicationRegistro_.Sesion._UpdatePanel1">
 <summary>
-Control Timer1.
+Control UpdatePanel1.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:WebApplicationRegistro_.Sesion._UpdatePanel1">
+<member name="F:WebApplicationRegistro_.Sesion._Timer1">
 <summary>
-Control UpdatePanel1.
+Control Timer1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -793,18 +793,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:WebApplicationRegistro_.HomeProfe._Timer1">
+<member name="F:WebApplicationRegistro_.HomeProfe._UpdatePanel1">
 <summary>
-Control Timer1.
+Control UpdatePanel1.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:WebApplicationRegistro_.HomeProfe._UpdatePanel1">
+<member name="F:WebApplicationRegistro_.HomeProfe._Timer1">
 <summary>
-Control UpdatePanel1.
+Control Timer1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1534,6 +1534,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:WebApplicationRegistro_.TareasProfesor._Label2">
 <summary>
 Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.TareasProfesor._UpdateProgress1">
+<summary>
+Control UpdateProgress1.
 </summary>
 <remarks>
 Campo generado automáticamente.

@@ -8,33 +8,27 @@ Public Class Global_asax
     Private Shared listP As New List(Of String)
 
 
-
     Shared Function Get_listA() As List(Of String)
         Return listA
     End Function
     Shared Function Get_listP() As List(Of String)
         Return listP
     End Function
-
     Shared Sub Update_AddList(ByVal email As String, ByVal l As List(Of String))
         l.Add(email)
     End Sub
     Shared Sub Update_RemoveList(ByVal email As String, ByVal l As List(Of String))
         l.Remove(email)
     End Sub
-
     Shared Function Get_CountA() As Integer
         Return countA
     End Function
-
     Shared Function Get_CountP() As Integer
         Return countP
     End Function
-
     Shared Sub Update_CountP(ByVal int As Integer)
         countP = countP + int
     End Sub
-
     Shared Sub Update_CountA(ByVal int As Integer)
         countA = countA + int
     End Sub

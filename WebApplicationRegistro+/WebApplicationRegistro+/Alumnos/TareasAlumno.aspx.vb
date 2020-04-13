@@ -5,9 +5,9 @@ Public Class TareasAlumno
     Inherits System.Web.UI.Page
 
     Dim bd As New dataBase.AccesoBD
-
     Dim coreo As String
     Dim res As SqlDataReader
+
     Dim dttabla As New DataTable
 
 
@@ -17,22 +17,24 @@ Public Class TareasAlumno
         If Page.IsPostBack Then
             dttabla = Session("datos")
         Else
+
             Dim seleccionar As New CommandField
             seleccionar.ButtonType = 0
             seleccionar.ShowSelectButton = True
             GridView1.Columns.Add(seleccionar)
+
             Dim asigs As New ArrayList
             asigs.Add("-- Asignatura --")
-            bd.Conectar()
 
+            bd.Conectar()
             res = bd.AsignaturasAlumno(coreo)
             While res.Read
                 asigs.Add(res.Item("codigoasig"))
             End While
+
             asignaturas.DataSource = asigs
             asignaturas.DataBind()
             res.Close()
-
             bd.CerrarConexion()
 
 
@@ -44,11 +46,7 @@ Public Class TareasAlumno
         bd.Conectar()
         Session("datos") = bd.DataT(asignaturas.SelectedValue)
         bd.CerrarConexion()
-
         dttabla = Session("datos")
-
-
-
 
         GridView1.DataSource = dttabla
         GridView1.DataBind()
