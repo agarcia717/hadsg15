@@ -52,6 +52,9 @@
                     </ajaxToolkit:ModalPopupExtender>
                     <br />
                     <br />
+                    <asp:Button ID="own2" runat="server" Font-Names="Verdana" Text="Coordinador" Width="112px" />
+                    <br />
+                    <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <ajaxToolkit:ModalPopupExtender ID="own_ModalPopupExtender" runat="server" BehaviorID="own_ModalPopupExtender" DynamicServicePath="" TargetControlID="own" PopupControlID="Panel2">
                     </ajaxToolkit:ModalPopupExtender>

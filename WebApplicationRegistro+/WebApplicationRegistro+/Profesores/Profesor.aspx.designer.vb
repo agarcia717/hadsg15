@@ -158,6 +158,15 @@ Partial Public Class HomeProfe
     Protected WithEvents group0_ModalPopupExtender As Global.AjaxControlToolkit.ModalPopupExtender
     
     '''<summary>
+    '''Control own2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents own2 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
     '''Control own_ModalPopupExtender.
     '''</summary>
     '''<remarks>

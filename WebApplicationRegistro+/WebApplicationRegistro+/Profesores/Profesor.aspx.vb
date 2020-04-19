@@ -32,5 +32,7 @@
         Response.Redirect("ExportarDocumentoXML.aspx")
     End Sub
 
-
+    Protected Sub own2_Click(sender As Object, e As EventArgs) Handles own2.Click
+        Response.Redirect("coordinador.aspx")
+    End Sub
 End Class

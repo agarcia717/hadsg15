@@ -334,6 +334,96 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:WebApplicationRegistro_.coordinador1._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._logout">
+<summary>
+Control logout.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._UpdateProgress1">
+<summary>
+Control UpdateProgress1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._DropDownList1">
+<summary>
+Control DropDownList1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._SqlDataSource1">
+<summary>
+Control SqlDataSource1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.coordinador1._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:WebApplicationRegistro_.Estadisticas._form1">
 <summary>
 Control form1.
@@ -883,6 +973,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:WebApplicationRegistro_.HomeProfe._own2">
+<summary>
+Control own2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:WebApplicationRegistro_.HomeProfe._own_ModalPopupExtender">
 <summary>
 Control own_ModalPopupExtender.
@@ -1198,6 +1297,24 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:WebApplicationRegistro_.Registro._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.Registro._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:WebApplicationRegistro_.Registro._Label2">
 <summary>
 Control Label2.
@@ -1228,6 +1345,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:WebApplicationRegistro_.Registro._RegularExpressionValidator1">
 <summary>
 Control RegularExpressionValidator1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplicationRegistro_.Registro._Label9">
+<summary>
+Control Label9.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1620,6 +1746,87 @@ Control SqlDataSource2.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member>
+<member name="T:WebApplicationRegistro_.es.ehusw.Matriculas">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.es.ehusw.Matriculas.#ctor">
+<remarks/>
+</member>
+<member name="E:WebApplicationRegistro_.es.ehusw.Matriculas.comprobarCompleted">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.es.ehusw.Matriculas.comprobar(System.String)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.es.ehusw.Matriculas.comprobarAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.es.ehusw.Matriculas.comprobarAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.es.ehusw.Matriculas.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.es.ehusw.comprobarCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.es.ehusw.comprobarCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApplicationRegistro_.es.ehusw.comprobarCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.localhost.Coordinador">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.#ctor">
+<remarks/>
+</member>
+<member name="E:WebApplicationRegistro_.localhost.Coordinador.HelloWorldCompleted">
+<remarks/>
+</member>
+<member name="E:WebApplicationRegistro_.localhost.Coordinador.getHorasCompleted">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.HelloWorld">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.HelloWorldAsync">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.HelloWorldAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.getHoras(System.String)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.getHorasAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.getHorasAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApplicationRegistro_.localhost.Coordinador.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.localhost.HelloWorldCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.localhost.HelloWorldCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApplicationRegistro_.localhost.HelloWorldCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.localhost.getHorasCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApplicationRegistro_.localhost.getHorasCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApplicationRegistro_.localhost.getHorasCompletedEventArgs.Result">
+<remarks/>
 </member>
 </members>
 </doc>

@@ -7,3 +7,4 @@ C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.vbpr
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.dll
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.xml
 C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.pdb
+C:\Users\Aitor\source\repos\WebApplicationRegistro+\Crypto\obj\Debug\Crypto.vbprojAssemblyReference.cache

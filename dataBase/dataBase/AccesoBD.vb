@@ -211,7 +211,15 @@ Public Class AccesoBD
         Return "OK"
     End Function
 
+    Public Shared Function getHoras(ByVal asig As String) As Integer
 
+        Dim st = "SELECT AVG(HReales) FROM TareasGenericas INNER JOIN EstudiantesTareas ON TareasGenericas.Codigo=EstudiantesTareas.CodTarea WHERE CodAsig ='" & asig & "'"
+
+        comando = New SqlCommand(st, conexion)
+        Dim result As Object = comando.ExecuteScalar()
+
+        Return result
+    End Function
 
 
 End Class

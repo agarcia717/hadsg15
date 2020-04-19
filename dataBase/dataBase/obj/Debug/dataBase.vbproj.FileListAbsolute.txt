@@ -7,3 +7,4 @@ C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.vbproj.CoreComp
 C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.dll
 C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.xml
 C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.pdb
+C:\Users\Aitor\source\repos\dataBase\dataBase\obj\Debug\dataBase.vbprojAssemblyReference.cache
