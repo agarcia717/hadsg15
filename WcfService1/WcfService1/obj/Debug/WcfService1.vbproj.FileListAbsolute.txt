@@ -1,0 +1,11 @@
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\bin\WcfService1.dll.config
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\bin\WcfService1.xml
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.vbprojAssemblyReference.cache
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.Resources.resources
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.vbproj.GenerateResource.cache
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.vbproj.CoreCompileInputs.cache
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.xml
+C:\Users\Aitor\source\repos\WcfService1\WcfService1\obj\Debug\WcfService1.pdb

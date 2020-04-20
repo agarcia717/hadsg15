@@ -27,20 +27,22 @@ Namespace localhost
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0"),  _
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     System.Web.Services.WebServiceBindingAttribute(Name:="CoordinadorSoap", [Namespace]:="http://tempuri.org/")>  _
-    Partial Public Class Coordinador
+     System.Web.Services.WebServiceBindingAttribute(Name:="BasicHttpBinding_IService1", [Namespace]:="http://tempuri.org/")>  _
+    Partial Public Class Service1
         Inherits System.Web.Services.Protocols.SoapHttpClientProtocol
         
-        Private HelloWorldOperationCompleted As System.Threading.SendOrPostCallback
+        Private GetDataOperationCompleted As System.Threading.SendOrPostCallback
         
-        Private getHorasOperationCompleted As System.Threading.SendOrPostCallback
+        Private GetDataUsingDataContractOperationCompleted As System.Threading.SendOrPostCallback
+        
+        Private MediaAlumnosOperationCompleted As System.Threading.SendOrPostCallback
         
         Private useDefaultCredentialsSetExplicitly As Boolean
         
         '''<remarks/>
         Public Sub New()
             MyBase.New
-            Me.Url = Global.WebApplicationRegistro_.My.MySettings.Default.WebApplicationRegistro__localhost_Coordinador
+            Me.Url = Global.WebApplicationRegistro_.My.MySettings.Default.WebApplicationRegistro__localhost_Service1
             If (Me.IsLocalFileSystemWebService(Me.Url) = true) Then
                 Me.UseDefaultCredentials = true
                 Me.useDefaultCredentialsSetExplicitly = false
@@ -74,62 +76,93 @@ Namespace localhost
         End Property
         
         '''<remarks/>
-        Public Event HelloWorldCompleted As HelloWorldCompletedEventHandler
+        Public Event GetDataCompleted As GetDataCompletedEventHandler
         
         '''<remarks/>
-        Public Event getHorasCompleted As getHorasCompletedEventHandler
+        Public Event GetDataUsingDataContractCompleted As GetDataUsingDataContractCompletedEventHandler
         
         '''<remarks/>
-        <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/HelloWorld", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
-        Public Function HelloWorld() As String
-            Dim results() As Object = Me.Invoke("HelloWorld", New Object(-1) {})
+        Public Event MediaAlumnosCompleted As MediaAlumnosCompletedEventHandler
+        
+        '''<remarks/>
+        <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetData", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
+        Public Function GetData(ByVal value As Integer, <System.Xml.Serialization.XmlIgnoreAttribute()> ByVal valueSpecified As Boolean) As <System.Xml.Serialization.XmlElementAttribute(IsNullable:=true)> String
+            Dim results() As Object = Me.Invoke("GetData", New Object() {value, valueSpecified})
             Return CType(results(0),String)
         End Function
         
         '''<remarks/>
-        Public Overloads Sub HelloWorldAsync()
-            Me.HelloWorldAsync(Nothing)
+        Public Overloads Sub GetDataAsync(ByVal value As Integer, ByVal valueSpecified As Boolean)
+            Me.GetDataAsync(value, valueSpecified, Nothing)
         End Sub
         
         '''<remarks/>
-        Public Overloads Sub HelloWorldAsync(ByVal userState As Object)
-            If (Me.HelloWorldOperationCompleted Is Nothing) Then
-                Me.HelloWorldOperationCompleted = AddressOf Me.OnHelloWorldOperationCompleted
+        Public Overloads Sub GetDataAsync(ByVal value As Integer, ByVal valueSpecified As Boolean, ByVal userState As Object)
+            If (Me.GetDataOperationCompleted Is Nothing) Then
+                Me.GetDataOperationCompleted = AddressOf Me.OnGetDataOperationCompleted
             End If
-            Me.InvokeAsync("HelloWorld", New Object(-1) {}, Me.HelloWorldOperationCompleted, userState)
+            Me.InvokeAsync("GetData", New Object() {value, valueSpecified}, Me.GetDataOperationCompleted, userState)
         End Sub
         
-        Private Sub OnHelloWorldOperationCompleted(ByVal arg As Object)
-            If (Not (Me.HelloWorldCompletedEvent) Is Nothing) Then
+        Private Sub OnGetDataOperationCompleted(ByVal arg As Object)
+            If (Not (Me.GetDataCompletedEvent) Is Nothing) Then
                 Dim invokeArgs As System.Web.Services.Protocols.InvokeCompletedEventArgs = CType(arg,System.Web.Services.Protocols.InvokeCompletedEventArgs)
-                RaiseEvent HelloWorldCompleted(Me, New HelloWorldCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState))
+                RaiseEvent GetDataCompleted(Me, New GetDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState))
             End If
         End Sub
         
         '''<remarks/>
-        <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/getHoras", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
-        Public Function getHoras(ByVal asi As String) As Integer
-            Dim results() As Object = Me.Invoke("getHoras", New Object() {asi})
-            Return CType(results(0),Integer)
+        <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetDataUsingDataContract", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
+        Public Function GetDataUsingDataContract(<System.Xml.Serialization.XmlElementAttribute(IsNullable:=true)> ByVal composite As CompositeType) As <System.Xml.Serialization.XmlElementAttribute(IsNullable:=true)> CompositeType
+            Dim results() As Object = Me.Invoke("GetDataUsingDataContract", New Object() {composite})
+            Return CType(results(0),CompositeType)
         End Function
         
         '''<remarks/>
-        Public Overloads Sub getHorasAsync(ByVal asi As String)
-            Me.getHorasAsync(asi, Nothing)
+        Public Overloads Sub GetDataUsingDataContractAsync(ByVal composite As CompositeType)
+            Me.GetDataUsingDataContractAsync(composite, Nothing)
         End Sub
         
         '''<remarks/>
-        Public Overloads Sub getHorasAsync(ByVal asi As String, ByVal userState As Object)
-            If (Me.getHorasOperationCompleted Is Nothing) Then
-                Me.getHorasOperationCompleted = AddressOf Me.OngetHorasOperationCompleted
+        Public Overloads Sub GetDataUsingDataContractAsync(ByVal composite As CompositeType, ByVal userState As Object)
+            If (Me.GetDataUsingDataContractOperationCompleted Is Nothing) Then
+                Me.GetDataUsingDataContractOperationCompleted = AddressOf Me.OnGetDataUsingDataContractOperationCompleted
             End If
-            Me.InvokeAsync("getHoras", New Object() {asi}, Me.getHorasOperationCompleted, userState)
+            Me.InvokeAsync("GetDataUsingDataContract", New Object() {composite}, Me.GetDataUsingDataContractOperationCompleted, userState)
         End Sub
         
-        Private Sub OngetHorasOperationCompleted(ByVal arg As Object)
-            If (Not (Me.getHorasCompletedEvent) Is Nothing) Then
+        Private Sub OnGetDataUsingDataContractOperationCompleted(ByVal arg As Object)
+            If (Not (Me.GetDataUsingDataContractCompletedEvent) Is Nothing) Then
                 Dim invokeArgs As System.Web.Services.Protocols.InvokeCompletedEventArgs = CType(arg,System.Web.Services.Protocols.InvokeCompletedEventArgs)
-                RaiseEvent getHorasCompleted(Me, New getHorasCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState))
+                RaiseEvent GetDataUsingDataContractCompleted(Me, New GetDataUsingDataContractCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState))
+            End If
+        End Sub
+        
+        '''<remarks/>
+        <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/MediaAlumnos", RequestNamespace:="http://tempuri.org/", ResponseNamespace:="http://tempuri.org/", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)>  _
+        Public Sub MediaAlumnos(<System.Xml.Serialization.XmlElementAttribute(IsNullable:=true)> ByVal asig As String, ByRef MediaAlumnosResult As Double, <System.Xml.Serialization.XmlIgnoreAttribute()> ByRef MediaAlumnosResultSpecified As Boolean)
+            Dim results() As Object = Me.Invoke("MediaAlumnos", New Object() {asig})
+            MediaAlumnosResult = CType(results(0),Double)
+            MediaAlumnosResultSpecified = CType(results(1),Boolean)
+        End Sub
+        
+        '''<remarks/>
+        Public Overloads Sub MediaAlumnosAsync(ByVal asig As String)
+            Me.MediaAlumnosAsync(asig, Nothing)
+        End Sub
+        
+        '''<remarks/>
+        Public Overloads Sub MediaAlumnosAsync(ByVal asig As String, ByVal userState As Object)
+            If (Me.MediaAlumnosOperationCompleted Is Nothing) Then
+                Me.MediaAlumnosOperationCompleted = AddressOf Me.OnMediaAlumnosOperationCompleted
+            End If
+            Me.InvokeAsync("MediaAlumnos", New Object() {asig}, Me.MediaAlumnosOperationCompleted, userState)
+        End Sub
+        
+        Private Sub OnMediaAlumnosOperationCompleted(ByVal arg As Object)
+            If (Not (Me.MediaAlumnosCompletedEvent) Is Nothing) Then
+                Dim invokeArgs As System.Web.Services.Protocols.InvokeCompletedEventArgs = CType(arg,System.Web.Services.Protocols.InvokeCompletedEventArgs)
+                RaiseEvent MediaAlumnosCompleted(Me, New MediaAlumnosCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState))
             End If
         End Sub
         
@@ -153,14 +186,61 @@ Namespace localhost
     End Class
     
     '''<remarks/>
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.3752.0"),  _
+     System.SerializableAttribute(),  _
+     System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     System.Xml.Serialization.XmlTypeAttribute([Namespace]:="http://schemas.datacontract.org/2004/07/WcfService1")>  _
+    Partial Public Class CompositeType
+        
+        Private boolValueField As Boolean
+        
+        Private boolValueFieldSpecified As Boolean
+        
+        Private stringValueField As String
+        
+        '''<remarks/>
+        Public Property BoolValue() As Boolean
+            Get
+                Return Me.boolValueField
+            End Get
+            Set
+                Me.boolValueField = value
+            End Set
+        End Property
+        
+        '''<remarks/>
+        <System.Xml.Serialization.XmlIgnoreAttribute()>  _
+        Public Property BoolValueSpecified() As Boolean
+            Get
+                Return Me.boolValueFieldSpecified
+            End Get
+            Set
+                Me.boolValueFieldSpecified = value
+            End Set
+        End Property
+        
+        '''<remarks/>
+        <System.Xml.Serialization.XmlElementAttribute(IsNullable:=true)>  _
+        Public Property StringValue() As String
+            Get
+                Return Me.stringValueField
+            End Get
+            Set
+                Me.stringValueField = value
+            End Set
+        End Property
+    End Class
+    
+    '''<remarks/>
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")>  _
-    Public Delegate Sub HelloWorldCompletedEventHandler(ByVal sender As Object, ByVal e As HelloWorldCompletedEventArgs)
+    Public Delegate Sub GetDataCompletedEventHandler(ByVal sender As Object, ByVal e As GetDataCompletedEventArgs)
     
     '''<remarks/>
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0"),  _
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code")>  _
-    Partial Public Class HelloWorldCompletedEventArgs
+    Partial Public Class GetDataCompletedEventArgs
         Inherits System.ComponentModel.AsyncCompletedEventArgs
         
         Private results() As Object
@@ -181,13 +261,13 @@ Namespace localhost
     
     '''<remarks/>
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")>  _
-    Public Delegate Sub getHorasCompletedEventHandler(ByVal sender As Object, ByVal e As getHorasCompletedEventArgs)
+    Public Delegate Sub GetDataUsingDataContractCompletedEventHandler(ByVal sender As Object, ByVal e As GetDataUsingDataContractCompletedEventArgs)
     
     '''<remarks/>
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0"),  _
      System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.ComponentModel.DesignerCategoryAttribute("code")>  _
-    Partial Public Class getHorasCompletedEventArgs
+    Partial Public Class GetDataUsingDataContractCompletedEventArgs
         Inherits System.ComponentModel.AsyncCompletedEventArgs
         
         Private results() As Object
@@ -198,10 +278,45 @@ Namespace localhost
         End Sub
         
         '''<remarks/>
-        Public ReadOnly Property Result() As Integer
+        Public ReadOnly Property Result() As CompositeType
             Get
                 Me.RaiseExceptionIfNecessary
-                Return CType(Me.results(0),Integer)
+                Return CType(Me.results(0),CompositeType)
+            End Get
+        End Property
+    End Class
+    
+    '''<remarks/>
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0")>  _
+    Public Delegate Sub MediaAlumnosCompletedEventHandler(ByVal sender As Object, ByVal e As MediaAlumnosCompletedEventArgs)
+    
+    '''<remarks/>
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.3752.0"),  _
+     System.Diagnostics.DebuggerStepThroughAttribute(),  _
+     System.ComponentModel.DesignerCategoryAttribute("code")>  _
+    Partial Public Class MediaAlumnosCompletedEventArgs
+        Inherits System.ComponentModel.AsyncCompletedEventArgs
+        
+        Private results() As Object
+        
+        Friend Sub New(ByVal results() As Object, ByVal exception As System.Exception, ByVal cancelled As Boolean, ByVal userState As Object)
+            MyBase.New(exception, cancelled, userState)
+            Me.results = results
+        End Sub
+        
+        '''<remarks/>
+        Public ReadOnly Property MediaAlumnosResult() As Double
+            Get
+                Me.RaiseExceptionIfNecessary
+                Return CType(Me.results(0),Double)
+            End Get
+        End Property
+        
+        '''<remarks/>
+        Public ReadOnly Property MediaAlumnosResultSpecified() As Boolean
+            Get
+                Me.RaiseExceptionIfNecessary
+                Return CType(Me.results(1),Boolean)
             End Get
         End Property
     End Class

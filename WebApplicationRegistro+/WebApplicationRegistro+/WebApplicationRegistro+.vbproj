@@ -127,7 +127,14 @@
     <Content Include="Registro.aspx" />
     <Content Include="Alumnos\TareasAlumno.aspx" />
     <Content Include="Profesores\TareasProfesor.aspx" />
-    <None Include="Web References\localhost\Coordinador.disco" />
+    <Content Include="Web References\localhost\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\localhost\Service1.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -309,11 +316,16 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </Content>
-    <None Include="Web References\localhost\Coordinador.wsdl" />
-    <Content Include="Web References\localhost\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.vb</LastGenOutput>
-    </Content>
+    <None Include="Web References\localhost\Service1.wsdl" />
+    <None Include="Web References\localhost\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\localhost\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\localhost\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -339,16 +351,16 @@
       <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>WebApplicationRegistro__es_ehusw_Matriculas</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="http://localhost:2942/Coordinador.asmx">
+    <WebReferenceUrl Include="http://localhost:57225/Service1.svc">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\localhost\</RelPath>
-      <UpdateFromURL>http://localhost:2942/Coordinador.asmx</UpdateFromURL>
+      <UpdateFromURL>http://localhost:57225/Service1.svc</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>WebApplicationRegistro__localhost_Coordinador</CachedSettingsPropName>
+      <CachedSettingsPropName>WebApplicationRegistro__localhost_Service1</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>

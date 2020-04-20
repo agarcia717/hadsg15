@@ -10,19 +10,8 @@ Public Class Registro
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim sw As New es.ehusw.Matriculas
 
-        If sw.comprobar(TextBox1.Text) = "NO" Then
-            Button1.Enabled = False
-            Label9.Text = "Alumno NO matriculado"
-            Label9.ForeColor = System.Drawing.Color.Red
-            Return
-        Else
-            Button1.Enabled = True
-            Label9.Text = "Alumno SI matriculado"
-            Label9.ForeColor = System.Drawing.Color.Green
-
-            Dim email As String
+        Dim email As String
             Dim nombre As String
             Dim apellidos As String
             Dim password As String
@@ -73,7 +62,7 @@ Public Class Registro
 
             End If
 
-        End If
+
     End Sub
 
     Protected Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged

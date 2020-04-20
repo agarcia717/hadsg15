@@ -7,8 +7,9 @@
     End Sub
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-        Dim sx As New localhost.Coordinador
-        Label3.Text = sx.getHoras(DropDownList1.SelectedValue).ToString
+        Dim sw As New localhost.Service1
+        Label3.Text = sw.MediaAlumnos(DropDownList1.SelectedValue)
+
         System.Threading.Thread.Sleep(1000)
     End Sub
 

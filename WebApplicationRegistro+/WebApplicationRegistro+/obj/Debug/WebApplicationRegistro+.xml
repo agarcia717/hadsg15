@@ -1777,56 +1777,5 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="P:WebApplicationRegistro_.es.ehusw.comprobarCompletedEventArgs.Result">
 <remarks/>
 </member>
-<member name="T:WebApplicationRegistro_.localhost.Coordinador">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.#ctor">
-<remarks/>
-</member>
-<member name="E:WebApplicationRegistro_.localhost.Coordinador.HelloWorldCompleted">
-<remarks/>
-</member>
-<member name="E:WebApplicationRegistro_.localhost.Coordinador.getHorasCompleted">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.HelloWorld">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.HelloWorldAsync">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.HelloWorldAsync(System.Object)">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.getHoras(System.String)">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.getHorasAsync(System.String)">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.getHorasAsync(System.String,System.Object)">
-<remarks/>
-</member>
-<member name="M:WebApplicationRegistro_.localhost.Coordinador.CancelAsync(System.Object)">
-<remarks/>
-</member>
-<member name="T:WebApplicationRegistro_.localhost.HelloWorldCompletedEventHandler">
-<remarks/>
-</member>
-<member name="T:WebApplicationRegistro_.localhost.HelloWorldCompletedEventArgs">
-<remarks/>
-</member>
-<member name="P:WebApplicationRegistro_.localhost.HelloWorldCompletedEventArgs.Result">
-<remarks/>
-</member>
-<member name="T:WebApplicationRegistro_.localhost.getHorasCompletedEventHandler">
-<remarks/>
-</member>
-<member name="T:WebApplicationRegistro_.localhost.getHorasCompletedEventArgs">
-<remarks/>
-</member>
-<member name="P:WebApplicationRegistro_.localhost.getHorasCompletedEventArgs.Result">
-<remarks/>
-</member>
 </members>
 </doc>
