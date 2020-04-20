@@ -1,4 +1,5 @@
-﻿Public Class coordinador1
+﻿Imports System.Data.SqlClient
+Public Class coordinador1
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -7,7 +8,7 @@
     End Sub
 
     Protected Sub DropDownList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList1.SelectedIndexChanged
-        Dim sw As New localhost.Service1
+        Dim sw As New ServiceReference1.Service1Client
         Label3.Text = sw.MediaAlumnos(DropDownList1.SelectedValue)
 
         System.Threading.Thread.Sleep(1000)
